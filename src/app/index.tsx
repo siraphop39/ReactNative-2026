@@ -1,9 +1,9 @@
 import { Link } from "expo-router";
-import { StyleSheet, Text, View } from "react-native";
+import { ScrollView, StyleSheet, Text } from "react-native";
 
 export default function Index() {
   return (
-    <View style={styles.container}>
+    <ScrollView contentContainerStyle={styles.container}>
       <Text style={styles.title}>แบบฝึกหัด Flexbox</Text>
 
       <Link href="/flexbox/ex01" style={styles.link}>Ex01</Link>
@@ -19,17 +19,23 @@ export default function Index() {
       <Link href="/flexbox/ex11" style={styles.link}>Ex11</Link>
       <Link href="/flexbox/ex12" style={styles.link}>Ex12</Link>
 
+      <Link href="/test-components" style={styles.link}>Test Components</Link>
+      <Link href="/test-greeting" style={styles.link}>Test Greeting</Link>
+      <Link href="/travel" style={styles.link}>Travel</Link>
+      <Link href="/resort" style={styles.link}>Resort</Link>
+
       <Link href="/page2" style={styles.link}>ไปหน้าที่ 2</Link>
-    </View>
+    </ScrollView>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    flexGrow: 1,
     justifyContent: "center",
     alignItems: "center",
     gap: 12,
+    paddingVertical: 24,
   },
   title: {
     fontSize: 22,
