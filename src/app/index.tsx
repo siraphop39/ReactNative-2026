@@ -23,6 +23,7 @@ export default function Index() {
       <Link href="/test-greeting" style={styles.link}>Test Greeting</Link>
       <Link href="/travel" style={styles.link}>Travel</Link>
       <Link href="/resort" style={styles.link}>Resort</Link>
+      <Link href="/review" style={styles.link}>Review</Link>
 
       <Link href="/page2" style={styles.link}>ไปหน้าที่ 2</Link>
     </ScrollView>
